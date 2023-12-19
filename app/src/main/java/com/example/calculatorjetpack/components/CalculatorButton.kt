@@ -25,7 +25,7 @@ fun CalculatorButton(symbol:String, onClick:()-> Unit, modifier: Modifier = Modi
     ) {
         Text(text = symbol,
             fontSize = 36.sp,
-            color = Color.Magenta)
+            color = Color.White)
     }
 }
 

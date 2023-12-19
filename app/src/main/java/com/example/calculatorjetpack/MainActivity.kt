@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Calculator(state = CalculatorState("1", "2", CalculatorOperation.Add))
+                    Calculator(state = CalculatorState("1", "2", CalculatorOperation.Add), onAction = {})
                 }
             }
         }
