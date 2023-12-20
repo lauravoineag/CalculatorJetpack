@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -18,7 +19,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.example.calculatorjetpack.CalculatorState
 import com.example.calculatorjetpack.actions.CalculatorAction
 import com.example.calculatorjetpack.actions.CalculatorOperation
@@ -42,8 +42,8 @@ fun Calculator(
             Text(
                 text = state.number1 + (state.operation?.operator ?: "") + state.number2,
                 textAlign = TextAlign.End,
-                fontSize = 80.sp,
-                maxLines = 2,
+                style = MaterialTheme.typography.displayLarge,
+                maxLines = 3,
                 fontWeight = FontWeight.Light,
                 modifier = Modifier
                     .fillMaxWidth()
